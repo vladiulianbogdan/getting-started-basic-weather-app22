@@ -1,0 +1,13 @@
+name: getting-started-basic-weather-app22
+region: us-east-1
+cloudProvider: genezio
+frontend:
+    path: client/dist
+    subdomain: chocolate-which-leopard
+scripts:
+    preBackendDeploy: npm install
+    preFrontendDeploy: npm install && npm run build
+workspace:
+    backend: server
+    frontend: client
+language: ts
